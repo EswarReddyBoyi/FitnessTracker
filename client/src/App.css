@@ -1,0 +1,538 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:'Jost', sans-serif;
+  background: linear-gradient(to bottom,#0f0c29,#302b63,#24243e);
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(20, 19, 19, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="email"] {
+  width: 100%; /* Ensure email input matches other input widths */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px; /* Adjusted for medium size */
+  background-color: #2a4fef;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #085bb5;
+}
+
+.button:active {
+  background-color: #033366; /* New background color when clicked */
+}
+
+.auth-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #241cc2;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+.sign-up-button {
+  padding: 10px 20px; /* Adjusted for smaller size */
+  font-size: 14px; /* Adjusted font size */
+}
+.sign-in-button {
+  padding: 10px 20px;
+  background-color: #079728; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.sign-in-button:hover {
+  background-color: #14812c; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.sign-in-button:active {
+  background-color: #07671c; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.sign-up-button:active {
+  background-color: #190a89; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the container takes full height of viewport */
+  gap: 50px; /* Gap between sections */
+  padding: 20px;
+}
+
+.dashboard-section {
+  width: 100%;
+  max-width: 1800px; /* Adjust max-width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-nav {
+  position: left;
+  top: 20px; /* Adjust as needed */
+  left: 5px; /* Align to the left side */
+}
+
+.search-container {
+  display: flex;
+  align-items: left;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.ds-btn{
+  padding: 10px 20px;
+  background-color: #1ed61b; /* Red color for sign-out button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ds-btn:hover{
+  background-color: #079228; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.ds-btn:active {
+  background-color: #054247; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+.sign-out {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.dtitle{
+  font-size:xx-large;
+  font-style:normal;
+  font-weight: bolder;
+}
+
+.Nav-button{
+  background-color: grey;
+  color: black;
+}
+
+.Nav-button:hover{
+  background-color: #b1c2cb; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.Nav-button:active {
+  background-color: #bad2bf; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.dashboard-buttons{
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 30px;
+  background-color: none;
+  color: #fff;
+  border: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.dashboard-nav {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-container {
+  margin-bottom: 10px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #d6da05;
+  color:black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container button:hover {
+  background-color: #d1d803c2;
+}
+
+.search-container button:active {
+  background-color: #747709c2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+}
+
+
+.sign-out button{
+  padding: 10px 20px;
+  background-color: #b10c1d; /* Red color for sign-out button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.sign-out button:hover {
+  background-color: #8f0513; /* Darker shade of red on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.sign-out-button:active {
+  background-color: #540202; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+.go-back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.go-back button{
+  padding: 10px 20px;
+  background-color: #1b3ad6; /* Red color for sign-out button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.go-back button:hover{
+  background-color: #1309a3; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.go-back button:active {
+  background-color: #030a58; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+.go-back2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.go-back2 button{
+  padding: 10px 20px;
+  background-color: #1b3ad6; /* Red color for sign-out button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.go-back2 button:hover{
+  background-color: #10069b; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.go-back2 button:active {
+  background-color: #030a58; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* FitnessHistory.css */
+
+.fitness-history-container {
+  margin: 50px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.records-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.record-item {
+  width: calc(33.33% - 20px); /* Adjust width for three items per row with some margin */
+  margin: 10px;
+  padding: 10px;
+  background-color: #e1e9e7;
+  border-radius: 2px;
+}
+
+.record-box {
+  margin-bottom: 8px;
+}
+
+.box-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.no-label{
+  font-weight: bolder;
+}
+
+.box-content {
+  flex: 2; /* Take up remaining space */
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.edit-btn {
+  padding: 8px 16px;
+  background-color: #096cd5; /* Blue color for edit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn:hover{
+  background-color: #100791; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.edit-btn:active {
+  background-color: #030a58; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #df3243; /* Red color for delete button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover{
+  background-color: #b10c0c; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.delete-btn:active {
+  background-color: #650303; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+.save-btn {
+  padding: 8px 16px;
+  background-color: #30be51; /* Green color for save button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover{
+  background-color: #2e9107; /* Darker shade of red on hover */
+  text-decoration: none; 
+}
+
+.save-btn:active {
+  background-color: #025e13; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.cc{
+  background-color: white;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cal-calc-btn{
+  padding: 10px 20px;
+  background-color: #a406ac; /* Red color for sign-out button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.cal-calc-btn:hover {
+  background-color: #8a0457; /* Darker shade of red on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.cal-calc-btn:active {
+  background-color: #3c0238; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.add-btn{
+  padding: 10px 20px;
+  background-color: hsl(54, 100%, 50%); /* Red color for sign-out button */
+  color: #1b1b1b;
+  border: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.add-btn:hover {
+  background-color: #95a206; /* Darker shade of red on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.add-btn:active {
+  background-color: #3a3c02; /* Darker shade of green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
