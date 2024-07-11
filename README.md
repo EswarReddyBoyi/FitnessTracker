@@ -1,4 +1,4 @@
-# Fitness Tracker App
+# Fitness Tracker 
 
 This is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) for tracking fitness activities. It allows users to record their fitness activities, calculate calories burnt, view their fitness history, and manage their records.
 
