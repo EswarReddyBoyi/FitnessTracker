@@ -42,8 +42,9 @@ cd server
 npm install
 
 # Install client dependencies
-cd ../client
+cd client
 npm install
+
 Set up environment variables:
 
 Create a .env file in the server directory based on .env.example and configure your MongoDB connection URI, JWT secret, and any other necessary variables.
@@ -58,17 +59,18 @@ npm run dev
 npm start
 
 
-Open your browser:
+# Open in your browser:
 Visit https://fitness-trackkzz.vercel.app/signin to see the application running.
 
 
-Dashboard for vercel: https://vercel.com/eswars-projects-6f8f8203/fitness-trackkzz/DZ5PfvRHHDS7zGVpKNQisXy2en3B
+# Dashboard for Vercel:
+https://vercel.com/eswars-projects-6f8f8203/fitness-trackkzz/DZ5PfvRHHDS7zGVpKNQisXy2en3B
 
 
 Frontend(React): Used Vercel for Frontend(client) deployement
 Backend(Node.js): Used Vscode,Mongodb for Backend(server) deployement
 
-we can also use others sites for Deployment like
+we can also use others sites for Deployment 
 Frontend (React): Deploy using Vercel, Netlify, or your preferred hosting service. Build the React app (npm run build) and deploy the generated build folder.
 
 Backend (Node.js): Deploy your Node.js server on platforms like Heroku, AWS, DigitalOcean, etc. Ensure environment variables are set in your deployment environment.
