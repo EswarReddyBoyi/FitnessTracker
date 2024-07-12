@@ -1,5 +1,6 @@
 {
-    "mongoURI": "mongodb://localhost:27017/fitness-tacker",
-    "jwtSecret": "y9d4275aee70307e104f57b80c0928734737fd194098ee81ec7f42d8a0528"
+    "mongoURI": "mongodb+srv://eswarboyi7:Le8wz6PmuhcZ7suC@fitness-tracker.pzavgu4.mongodb.net/?retryWrites=true&w=majority&appName=fitness-tracker",
+    "jwtSecret": "9d4275aee70307e104f57b80c0928734737fd194098ee81ec7f42d8a0528"
+      
 }
   
