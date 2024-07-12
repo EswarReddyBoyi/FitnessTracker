@@ -59,21 +59,40 @@ npm run dev
 npm start
 
 
-# Open in your browser:
+# Frontend deployment done on platform vercel & Open in your browser:
 Visit https://fitness-trackkzz.vercel.app/signin to see the application running.
-
 
 # Dashboard for Vercel:
 https://vercel.com/eswars-projects-6f8f8203/fitness-trackkzz/DZ5PfvRHHDS7zGVpKNQisXy2en3B
 
+# Backend deployment done on platform glitch: 
+https://fitness-trackerrzz.glitch.me
+
+# For Edit: 
+https://glitch.com/edit/#!/fitness-trackerrzz
+
+# npm packages used in this project:
+express
+body-parser
+bcryptjs
+jsonwebtoken
+express-validator
+mongoose
+cors
+axios
+react
+react-dom
+react-router-dom
+react-scripts
+
 
 Frontend(React): Used Vercel for Frontend(client) deployement
-Backend(Node.js): Used Vscode,Mongodb for Backend(server) deployement
+Backend(Node.js): Used Glitch for Backend(server) deployement
 
 we can also use others sites for Deployment 
 Frontend (React): Deploy using Vercel, Netlify, or your preferred hosting service. Build the React app (npm run build) and deploy the generated build folder.
 
-Backend (Node.js): Deploy your Node.js server on platforms like Heroku, AWS, DigitalOcean, etc. Ensure environment variables are set in your deployment environment.
+Backend (Node.js): Deploy your Node.js server on platforms like Heroku,Glitch, AWS, DigitalOcean, etc. Ensure environment variables are set in your deployment environment.
 
 Contributing
 Contributions are welcome! Here's how you can contribute:
