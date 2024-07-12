@@ -12,8 +12,8 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 ## Technologies Used
 
-- **Frontend**: React.js, Axios, React Router
-- **Backend**: Node.js, Express.js, MongoDB (Mongoose), JWT for authentication
+- **Frontend**: React.js, Axios, React Router, vercel platform(for deployment)
+- **Backend**: Node.js, Express.js, MongoDB Atlas, JWT for authentication, glitch platform(for deployment)
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 - Node.js (and npm)
-- MongoDB (local or Atlas instance)
+- MongoDB ( Atlas instance)
 - Git
 
 ### Installation
