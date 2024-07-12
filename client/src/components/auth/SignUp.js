@@ -13,7 +13,7 @@ const SignUp = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', { username, email, password });
+      const res = await axios.post('https://fitness-trackerrzz.glitch.me/api/auth/signup', { username, email, password });
       if (res.data.success) {
         setMessage('Sign up successful');
       } else{

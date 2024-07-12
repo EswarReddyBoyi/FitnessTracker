@@ -11,7 +11,7 @@ const SignIn = () => {
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signin', { username, password });
+      const res = await axios.post('https://fitness-trackerrzz.glitch.me/api/auth/signin', { username, password });
       if (res.data.token) {
         localStorage.setItem('token', res.data.token); 
         navigate('/dashboard');
