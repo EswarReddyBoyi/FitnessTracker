@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple steps.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/22BCE8093-Eswar/FitnessTracker.git
+   git clone https://github.com/EswarReddyBoyi/FitnessTracker.git
 
    cd fitness-tracker
 Install dependencies:
